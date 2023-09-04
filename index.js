@@ -23,8 +23,8 @@ const db = {
   "|": "_VERTICAL__LINE_",
 };
 
-const encodeSigns = (string) => {
-  if (string === "" || typeof string !== "string") {
+const encodeSigns = (string = "") => {
+  if (typeof string !== "string") {
     return "";
   }
 
@@ -37,8 +37,16 @@ const encodeSigns = (string) => {
   return newString;
 };
 
-const decodeSigns = (encodedString) => {
-  function escapeRegExp(str) {
+const decodeSigns = (encodedString = "") => {
+  if (typeof encodedString !== "string") {
+    return "";
+  }
+
+  function escapeRegExp(str = "") {
+    if (typeof str !== "string") {
+      return "";
+    }
+
     // Escape special characters in a string to be used in a regex pattern
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
