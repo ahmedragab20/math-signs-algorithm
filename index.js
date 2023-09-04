@@ -1,6 +1,6 @@
 const db = {
   "+": "_PLUS_",
-  "-": "_HYPHEN-MINUS_",
+  "-": "_HYPHEN_MINUS_",
   "*": "_ASTERISK_",
   "/": "_SOLIDUS_",
   "%": "_PERCENT__SIGN_",
@@ -11,8 +11,8 @@ const db = {
   "]": "_RIGHT_SQUARE_BRACKET_",
   "{": "_LEFT_CURLY_BRACKET_",
   "}": "_RIGHT_CURLY_BRACKET_",
-  "<": "_LESS-THAN__SIGN_",
-  ">": "_GREATER-THAN__SIGN_",
+  "<": "_LESS_THAN__SIGN_",
+  ">": "_GREATER_THAN__SIGN_",
   ",": "_COMMA_",
   ".": "_FULL_STOP_",
   ":": "_COLON_",
@@ -69,6 +69,6 @@ const decodeSigns = (encodedString = "") => {
 console.log(encodeSigns("(1+2-2=3)")); // MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_
 console.log(
   decodeSigns(
-    "_LEFT_PARENTHESIS_1_PLUS_2_HYPHEN-MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_"
+    "_LEFT_PARENTHESIS_1_PLUS_2_HYPHEN_MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_"
   )
 ); // (1+2-2=3)
