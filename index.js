@@ -66,8 +66,7 @@ const decodeSigns = (encodedString = "") => {
   return replacedString;
 };
 
-console.log(encodeSigns("(1+2-2=3)")); // MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_
-console.log(
+console.log(encodeSigns("(1+2-2=3)")); // MINUS_2_EQUAL_LEFT_PARENTHESIS_1_PLUS_2_HYPHEN_MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_
   decodeSigns(
     "_LEFT_PARENTHESIS_1_PLUS_2_HYPHEN_MINUS_2_EQUALS__SIGN_3_RIGHT_PARENTHESIS_"
   )
